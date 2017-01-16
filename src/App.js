@@ -9,7 +9,21 @@ class App extends Component {
       err: ''
     }
   }
-  
+
+  update(e) {
+    let code = e.targe.value;
+    try {
+      this.setState({
+        output: window.Babel
+        .transform(code, { presets: ['es2015', 'react']})
+        .code,
+        err: ''
+      })
+    }catch(err){
+      this.setState({err: err.message})
+    }
+  }
+
   render() {
     return (
       <div>
