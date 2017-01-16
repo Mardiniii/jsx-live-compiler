@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   update(e) {
-    let code = e.targe.value;
+    let code = e.target.value;
     try {
       this.setState({
         output: window.Babel
