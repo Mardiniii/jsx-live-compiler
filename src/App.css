@@ -24,12 +24,13 @@ header {
 
 pre {
   background-color: #f8f8f8;
+  overflow-y: auto;
 }
 
 pre, textarea {
   width: 50%;
   font-family: monospace;
-  font-size: 28px;
+  font-size: 20px;
   margin: 0;
   padding: 10px;
   color: #222;
