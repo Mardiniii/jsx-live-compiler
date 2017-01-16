@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css'
 
 class App extends Component {
   constructor () {
@@ -27,6 +28,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <h1>JSX Live Compiler</h1>
         <header>{this.state.err}</header>
         <div className="container">
           <textarea
